@@ -16,17 +16,26 @@
         </h1>
     </header>
     <main>
-        <section class="bg-green-100 w-3/4 mx-auto mt-8 p-8">
+        <section class="bg-green-100 w-3/4 mx-auto mt-8 p-8 py-12">
             <h3 class="text-2xl mb-4">Please Login</h3>
             <div>
-                <input class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="text" name="" id=""
-                    placeholder="Your Email">
-                <input class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="password" name="" id=""
-                    placeholder="Your Password">
-                <button class="bg-amber-500	px-4 py-2 text-white font-medium rounded">Submit</button>
+                <input id="email-field" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="text" name=""
+                    id="" placeholder="Your Email">
+                <input id="password-field" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="password"
+                    name="" id="" placeholder="Your Password">
+                <p id="error-message" class="bg-red-300 py-4 px-4 rounded w-2/4 mb-4 font-light hidden">Wrong Login
+                    Credentials! Please
+                    enter
+                    correct email
+                    and
+                    password
+                    to
+                    login</p>
+                <button id="login-btn" class="bg-amber-500	px-4 py-2 text-white font-medium rounded">Submit</button>
             </div>
         </section>
     </main>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
