@@ -2,9 +2,11 @@
 document.getElementById('login-btn').addEventListener('click',function(){
     console.log('clicked');
     
+    // Get Username
     const emailInput = document.getElementById('email-field');
     const email = emailInput.value;
-
+    
+    // Get User Password
     const passwordInput = document.getElementById('password-field');
     const password = passwordInput.value;
     
