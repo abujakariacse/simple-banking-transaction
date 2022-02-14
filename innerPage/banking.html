@@ -10,8 +10,50 @@
 </head>
 
 <body>
-    <h1>Hello World!!</h1>
-    <script src="./banking.html"></script>
+    <header>
+        <h1 class="text-5xl text-center mt-12 font-medium">Let Get Some<span class="text-teal-400 font-semibold">
+                Money</span>
+        </h1>
+    </header>
+    <main>
+        <!-- Balance & Transaction -->
+        <section class="py-12   ">
+            <div class="grid grid-cols-3 gap-12 w-3/4 mx-auto text-white text-center">
+                <div class="bg-blue-400 rounded p-8">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4 class="text-5xl">$<span id="current-deposit">00</span></h4>
+                </div>
+                <div class="bg-red-400 rounded p-8">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h4 class="text-5xl">$<span id="current-withdraw">00</span></h4>
+                </div>
+                <div class="bg-green-400 rounded p-8">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h4 class="text-5xl">$<span id="current-balance">00</span></h4>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit & Withdraw-->
+        <section>
+            <div class="grid grid-cols-2 gap-8 w-3/4 mx-auto mt-12">
+                <div class="bg-blue-300 p-8 rounded px-12">
+                    <h3 class="text-2xl">Please Deposit</h3>
+                    <input id="deposit-field" class="rounded border block border-gray-400 rounded w-3/4 mb-4 px-2 my-2"
+                        type="text" placeholder="Deposit Amount">
+                    <button id="deposit-btn"
+                        class="bg-blue-500	px-4 py-2 text-white font-medium rounded">Deposit</button>
+                </div>
+                <div class="bg-red-300 p-8 rounded px-12">
+                    <h3 class="text-2xl">Please Withdraw</h3>
+                    <input id="withdraw-field" class="rounded border block border-gray-400 rounded w-3/4 mb-4 px-2 my-2"
+                        type="text" placeholder="Withdraw Amount">
+                    <button id="withdraw-btn"
+                        class="bg-red-500	px-4 py-2 text-white font-medium rounded">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/banking.js"></script>
 </body>
 
 </html>
