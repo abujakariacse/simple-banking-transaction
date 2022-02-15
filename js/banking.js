@@ -47,11 +47,11 @@ document.getElementById('deposit-btn').addEventListener('click',function(){
     }
     else if(depositAmount != 'number'){
         const errorThrow = document.getElementById('deposit-field');
-        errorThrow.style.border = '2px solid red';
-        
+        errorThrow.style.border = '2px solid red';   
     }
     
 })
+
 
 
 document.getElementById('withdraw-btn').addEventListener('click',function(){
@@ -63,7 +63,6 @@ document.getElementById('withdraw-btn').addEventListener('click',function(){
     }
     else if(withdrawAmount != 'number'){
         const errorThrow = document.getElementById('withdraw-field');
-        errorThrow.style.border = '2px solid red';
-        
+        errorThrow.style.border = '2px solid red';       
     }
 })
